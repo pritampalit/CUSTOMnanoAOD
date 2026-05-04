@@ -1,0 +1,2 @@
+/store/mc/Run3Summer22EEDRPremix/SMS-TStauStau_MStau-100_ctau-100mm_mLSP-1_TuneCP5_13p6TeV_madgraphMLM-pythia8/AODSIM/124X_mcRun3_2022_realistic_postEE_v1-v2/50000/fa78c571-5dc9-490c-9d05-8c9d8caa0754.root
+/store/mc/Run3Summer22EEDRPremix/SMS-TStauStau_MStau-100_ctau-100mm_mLSP-1_TuneCP5_13p6TeV_madgraphMLM-pythia8/AODSIM/124X_mcRun3_2022_realistic_postEE_v1-v2/50000/fd1359dd-bd7d-443f-9353-16f187fa6568.root

@@ -1,0 +1,22 @@
+# CMSSW / build artifacts
+*.o
+*.so
+*.d
+*.pyc
+__pycache__/
+
+# ROOT / outputs
+*.root
+
+# temp / backup
+*~
+*.out
+
+# logs
+test/log/
+
+# html reports
+*.html
+
+# system
+.DS_Store

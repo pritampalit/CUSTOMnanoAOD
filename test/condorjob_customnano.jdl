@@ -1,0 +1,36 @@
+# condor_job.sub
+
+# Job name
+Executable = run_job_customnano.sh
+Universe = vanilla
+Getenv = True
+
+# Request resources
+Request_cpus = 1
+Request_memory = 2 GB
+Request_disk = 5 GB
+
+# Use your X.509 proxy for authentication
+x509userproxy = $ENV(X509_USER_PROXY)
+use_x509userproxy = True
+
+# Transfer your executable and any local scripts
+#transfer_input_files = run_job_ntuplegen_v2.sh, filelist_lhpt_ntuplegen_2file.txt
+transfer_input_files = run_job_customnano.sh, $(FILELIST)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+# Output / error / log
+output = log/job_$(Cluster)_$(Process).out
+error  = log/job_$(Cluster)_$(Process).err
+log    = log/job_$(Cluster).log
+
++JobFlavour = "tomorrow"
+
+# Job arguments
+#arguments = $(Process) filelist_lhpt_ntuplegen_2file.txt
+arguments = $(Process) $(FILELIST)
+
+# Number of jobs = number of files
+#queue 2
+queue $(NJOBS)
